@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="basket">
+        <!-- Calculator ----------------------------Starts -->
+        <form class="calculator">
+
+            <!-- Screen -->
+            <input type="text" id="screen" disabled>
+
+            <!-- Keys -----------------------Starts -->
+            <!-- First Row ------ (AC , C , % , -) -->
+            <input type="button" value="AC" onclick="cal.AllClear()">
+            <input type="button" value="C" onclick="cal.Clear()">
+            <input type="button" value="%" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="-" onclick="cal.AddScreen(this.value)">
+            
+            <!-- Second Row ------ (9 , 8 , 7 , *) -->
+            <input type="button" value="9" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="8" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="7" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="*"  onclick="cal.AddScreen(this.value)">
+
+            <!-- Third Row ------ (6 , 5 , 4 , /) -->
+            <input type="button" value="6" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="5" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="4" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="/" onclick="cal.AddScreen(this.value)">
+            
+            <!-- Fourth Row ------ (3 , 2 , 1 , +) -->
+            <input type="button" value="3" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="2" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="1" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="+" onclick="cal.AddScreen(this.value)">
+
+            <!-- Last Row ------ (0 , . , =) -->
+            <input type="button" value="0" onclick="cal.AddScreen(this.value)">
+            <input type="button" value="." onclick="cal.AddScreen(this.value)">
+            <input type="button" value="=" id="calculate" onclick="cal.Calculate()">
+            <!-- Keys -----------------------Ends -->
+
+        </form>
+        <!-- Calculator --------------------Ends -->
+    </div>
+    <script src="assets/javascript/file.js"></script>
+</body>
+</html>

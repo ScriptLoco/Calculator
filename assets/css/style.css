@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------Basket-------------------- */
+.basket {
+    height: 100vh;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------Calculator-------------------- */
+
+.calculator {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 0.25%;
+}
+
+#screen {
+    grid-area: 1 / 1 / 2 / 5;
+    background: linear-gradient(to top, #48baff,#a4e9ff);
+    text-indent: 20px;
+}
+
+/* --------------------Keys-------------------- */
+
+.calculator input[type$="on"] , #screen{
+    border-radius: 10px;
+    border: 1px solid white;
+    outline: none;
+    font-size: 30px;
+}
+
+.calculator input[type="button"] {
+    background-color: black;
+    color: white;
+}
+
+#calculate {
+    grid-area: 6 / 3 / 7 / 5;
+    background-color: yellow;
+    color: black;
+}
