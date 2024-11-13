@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(6,1fr);
-    gap: 0.25%;
+    gap: 0.75%;
 }
 
 #screen {
